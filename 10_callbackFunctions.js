@@ -8,6 +8,15 @@ skill.forEach((eachElement, index, skill) => {
   );
 });
 
+function sum(a, b) {
+  console.log(a + b);
+}
+
+function cal(a, b, sumCallbackFunction) {
+  sumCallbackFunction(a, b);
+}
+
+cal(12, 34, sum);
 // High Order Function
 //In JavaScript, a higher-order function is a function that can accept other functions as arguments, return functions, or both. They enable abstraction, composition, and the creation of more flexible and reusable code.
 
